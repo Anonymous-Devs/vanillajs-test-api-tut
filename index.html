@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Api</title>
+    <link rel="stylesheet" href="./asset/stylesheet/style.css">
+
+</head>
+
+<body>
+
+    <h1 class="text-center"> Test App! </h1>
+
+    <!--- SignUp Form --->
+    <div id="signupWrapper">
+        <h3 class="text-center">Signup SECTION </h3>
+        <p id="success_msg" class="text-center"></p>
+        <form action="/create-account" id="signupForm" method="POST">
+            <input type="text" name="name" placeholder="full name" style="margin-top:1rem"><br />
+            <input type="email" name="email" placeholder="email" style="margin-top:1rem"><br/>
+            <input type="password" name="password" placeholder="password" style="margin-top:1rem"><br />
+            <center>
+                <button type="submit" style="margin-top:1rem">Submit</button>
+            </center>
+            <p class="text-center"> Already have an account? <a id="signinBtn">Signin</a></p>
+        </form>
+    </div>
+
+
+    <!--- Login Form --->
+    <div id="signinWrapper">
+        <h3 class="text-center">Signin SECTION </h3>
+        <p id="errorMessage" class="text-center"></p>
+        <form action="/login" method="POST" style="margin-top:1rem" id="signin">
+            <input type="email" name="email" placeholder="email" style="margin-top:1rem"><br/>
+            <input type="password" name="password" placeholder="password" style="margin-top:1rem"><br />
+            <center>
+                <button type="submit" style="margin-top:1rem">Submit</button>
+            </center>
+            <p class="text-center"> Don't have an account? <a id="signupBtn">Signup</a></p>
+        </form>
+        <div>
+
+
+            <script src="./asset/js/app.js"></script>
+</body>
+
+</html>
