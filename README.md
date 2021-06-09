@@ -30,7 +30,8 @@ After running the above code, if you have vscode installed copy and paste this c
 $ code .
 ```
 
-**Contributors so far**
+**Contributors**
 
 [![](https://github.com/orung.png?size=50)](https://github.com/orung)
+[![](https://github.com/koredebanfe.png?size=50)](https://github.com/koredebanfe)
 [![](https://github.com/remilekun-elijah.png?size=50)](https://github.com/remilekun-elijah)
