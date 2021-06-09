@@ -15,7 +15,7 @@ _Visit the website_ [Here](https://anonymous-devs.github.io/vanillajs-test-api-t
 - [ ] Create a footer and style it.
 
 > PS: Clone this repo and complete any task of your choice
->  then push to staging, then come back to github and create a *pull request*.
+>  then push to staging, then come back to github and create a *pull request*. If you don't know how to create pull request, check it out [here](https://opensource.com/article/19/7/create-pull-request-github) or visit the official github doc site on how to create pull request [here](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
 
 **How to start working on this project**
 
