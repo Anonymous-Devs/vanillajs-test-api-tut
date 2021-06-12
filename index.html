@@ -6,45 +6,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Api</title>
     <link rel="stylesheet" href="./asset/stylesheet/style.css">
-
 </head>
 
 <body>
 
-    <h1 class="text-center"> Test App! </h1>
+    <nav class="container">
+        <div class="">
+            <ul>
+                <li><a href="/"> About</a></li>
+                <li><a href="/"> Mens</a></li>
+                <li><a href="/"> Womens</a></li>
+                <li><a href="/"> Gallery</a></li>
+                <li><a href="/"> Contact</a></li>
+            </ul>
+        </div>
+        <div class="">
+            <ul id="noLogin">
+                <li><a class="btn btn-primary" href="login.html">Login</a></li>
+                <li class="pr-0"><a class="btn btn-default" href="signup.html">Signup</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="banner">
+       <div class="container">
+           <div class="banner-text caption_bg text-center">
+               <h1>Create your own fashion style</h1>
+               <div class="maintain_style">
+                   Maintain your style statement
+               </div>
+               <div class="text-center">
+                   <a href="/" class="btn btn-primary text-decor-none"> Find out more</a>
+               </div>
+           </div>
+       </div>
+    </section>
 
-    <!--- SignUp Form --->
-    <div id="signupWrapper">
-        <h3 class="text-center">Signup SECTION </h3>
-        <p id="success_msg" class="text-center"></p>
-        <form action="/create-account" id="signupForm" method="POST">
-            <input type="text" name="name" placeholder="full name" style="margin-top:1rem"><br />
-            <input type="email" name="email" placeholder="email" style="margin-top:1rem"><br/>
-            <input type="password" name="password" placeholder="password" style="margin-top:1rem"><br />
-            <center>
-                <button type="submit" style="margin-top:1rem">Submit</button>
-            </center>
-            <p class="text-center"> Already have an account? <a id="signinBtn">Signin</a></p>
-        </form>
+    <section class="container text-center">
+        <div class="grid mt-2">
+            <div class="mt-2">
+                <img src="asset/image/about.jpeg" alt="" class="img_responsive">
+            </div>
+            <div class="mt-2">
+                    <h2 class="yellow title">About Us</h2>
+                <div>
+                    <h2>We provide you with great suits that benefit you and your lifestyle</h2>
+                    <p>I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure.</p>
+                </div>
+                <div>
+                    <h3>Handcrafted Suit</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+<section class="free_sec">
+    <div class="container">
+        <h1>Free shipping on all orders above $60 </h1>
     </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="grid_footer">
+            <div>
+                <h5>About us</h5>
+                <p>We Provide You With Great Suits That Benefit You And Your Lifestyle</p>
+            </div>
+            <div>
+                <h5>Our Services</h5>
+                <ul>
+                    <li>Foreign Suit</li>
+                    <li>Resizing Dress</li>
+                    <li>Ankara Sewing</li>
+                    <li>Traditional wears</li>
+                    <li>Etibor</li>
+                </ul>
+            </div>
+            <div>
+                <h5>Business Hours</h5>
+                <ul>
+                    <li>Monday - Friday : 9 am to 8 pm</li>
+                    <li>Saturday : 10 am to 4 pm</li>
+                    <li>Sunday : Closed</li>
+                    <li>Support Hours in 24/7 Everyday</li>
+                </ul>
+            </div>
+            <div>
+                <h5>Service Hours</h5>
+                <ul>
+                    <li>Monday - Friday : 9 am to 8 pm</li>
+                    <li>Saturday : 10 am to 4 pm</li>
+                    <li>Sunday : Closed</li>
+                    <li>Support Hours in 24/7 Everyday</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
 
 
-    <!--- Login Form --->
-    <div id="signinWrapper">
-        <h3 class="text-center">Signin SECTION </h3>
-        <p id="errorMessage" class="text-center"></p>
-        <form action="/login" method="POST" style="margin-top:1rem" id="signin">
-            <input type="email" name="email" placeholder="email" style="margin-top:1rem"><br/>
-            <input type="password" name="password" placeholder="password" style="margin-top:1rem"><br />
-            <center>
-                <button type="submit" style="margin-top:1rem">Submit</button>
-            </center>
-            <p class="text-center"> Don't have an account? <a id="signupBtn">Signup</a></p>
-        </form>
-        <div>
+<script>
+    let onLogin = document.querySelector('#onLogin');
 
 
-            <script src="./asset/js/app.js"></script>
+</script>
+
 </body>
 
 </html>

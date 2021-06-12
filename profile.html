@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Api</title>
+    <link rel="stylesheet" href="./asset/stylesheet/style.css">
+
+</head>
+
+<body>
+<main class="my-2">
+    <h1 class="text-center"> Test App! </h1>
+
+    <!--- SignUp Form --->
+    <div id="signupWrapper">
+    <h3 class="text-center">UPDATE PROFILE </h3>
+    <p id="success_msg" class="text-center"></p>
+    <form action="/create-account" id="signupForm" method="POST">
+        <div class="d-flex jusatify-align-center my-2">
+           <img id="blah" src="./asset/image/anonymous.jpg" alt="your image" style="flex: 1;"/>
+               <div>
+                   <h1></h1>
+               </div>
+        </div>
+        <div>
+           <input type="text" name="name" placeholder="full name" style="margin-top:1rem"><br />
+           <input type="email" name="email" placeholder="email" style="margin-top:1rem"><br/>
+            <input type="text" name="country" placeholder="Country" id="country" style="margin-top:1rem">
+            <input type="text" name="state" placeholder="State" id="State" style="margin-top:1rem">
+            <input type="text" name="city" placeholder="City" id="city" style="margin-top:1rem">
+            <textarea id="about" name="about" rows="4" cols="50" style="width: 100%;margin-top:1rem">About You
+            </textarea>
+<!--            <div class="mt-2">-->
+<!--                <h4>Change Password</h4>-->
+<!--                <input type="password" name="password" placeholder="Old Password" style="margin-top:1rem"><br />-->
+<!--                <input type="password" name="password" placeholder="New Password" style="margin-top:1rem"><br />-->
+<!--                <input type="password" name="password" placeholder="Confirm Password" style="margin-top:1rem"><br />-->
+<!--            </div>-->
+           <center>
+               <button type="submit" style="margin-top:1rem">Update</button>
+           </center>
+        </div>
+    </form>
+</div>
+</main>
+</body>
+
+</html>
