@@ -1,94 +1,29 @@
-const signinWrapper = document.querySelector("#signinWrapper");
-signinWrapper.style.display = "none";
-const signinBtn = document.querySelector('#signinBtn');
-const signupBtn = document.querySelector('#signupBtn');
-const signupWrapper = document.querySelector("#signupWrapper");
+// const signinWrapper = document.querySelector("#signinWrapper");
+// signinWrapper.style.display = "none";
+// const signinBtn = document.querySelector('#signinBtn');
 
-//add an addEventListener to the signinBtn
-signinBtn.addEventListener('click', e => {
-    signinWrapper.style.display = "block";
-    signupWrapper.style.display = 'none';
-})
+const noLogin = document.querySelector('#noLogin');
+const welcomeText = document.querySelector("#welcomeText");
+const userName =   document.querySelector("#userName");
 
-//add an addEventListener to the signupBtn
-signupBtn.addEventListener('click', e => {
-    signinWrapper.style.display = "none";
-    signupWrapper.style.display = 'block';
-})
+welcomeText.style.display = 'none';
 
 
-let signupForm = document.querySelector('#signupForm');
+let email = localStorage.getItem('user');
 
-signupForm.addEventListener('submit', e => {
-    e.preventDefault();
-    const data = {
-        name: e.target.name.value,
-        email: e.target.email.value,
-        password: e.target.password.value
-    }
-    fetch('/create-account', {
-        method: 'POST',
-        body: JSON.stringify(data),
-        headers: {
-            'Content-Type': 'application/json',
-        },
-    }).then(res => {
+if(email !== null){
+    fetch(`https://4cf49c2887b0.ngrok.io/user/getOne?email=${email}`).then(res => {
         return res.json()
     }).then(data => {
-        let success_msg = document.getElementById('success_msg');
-        if (data.okay === true) {
-            success_msg.classList.add('green');
-            success_msg.textContent = data.message;
-            console.log(data.message);
-            setTimeout(() => {
-                success_msg.textContent = '';
-            }, 3000)
-        } else {
-            if (success_msg.className === 'green') {
-                success_msg.classList.add('red');
-                success_msg.textContent = data.message;
-            }
-        }
+        noLogin.style.display = 'none';
+        welcomeText.style.display = 'block';
+        userName.innerText = data.message.name;
+        console.log(data);
     }).catch(err => {
         console.log(err);
-    })
-})
+    });
+}else{
+    welcomeText.style.display = 'none';
+    console.log('User is not logedin');
+}
 
-
-let signin = document.querySelector("#signin");
-signin.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    const data = {
-        email: e.target.email.value,
-        password: e.target.password.value
-    }
-    try {
-        const errorMessage = document.querySelector("#errorMessage");
-        fetch("/login", {
-                method: "POST",
-                body: JSON.stringify(data),
-                headers: {
-                    "content-type": "application/json"
-                }
-            })
-            .then(result => result.json())
-            .then(res => {
-                errorMessage.textContent = "Loggedin successfully";
-                console.log(res)
-            })
-            .catch(err => console.log(err))
-    } catch (e) {
-        alert(e)
-        console.log(e)
-    }
-
-    /**
-      @TODO
-      *Create an object with email and password keys i.e const data = {
-        email: ,
-        password: ,
-      }
-    **/
-
-})
