@@ -5,28 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Api</title>
-    <link rel="stylesheet" href="/asset/stylesheet/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./asset/stylesheet/style.css">
 </head>
 
 <body>
-
-    <nav class="container">
-        <div class="">
-            <ul>
-                <li><a href="/"> About</a></li>
-                <li><a href="/"> Mens</a></li>
-                <li><a href="/"> Womens</a></li>
-                <li><a href="/"> Gallery</a></li>
-                <li><a href="/"> Contact</a></li>
-            </ul>
+    <nav class="container gap-5">
+        <div class="sm-flex">
+            <h1 class="text-white">Logo</h1>
+            <h2 class="md-d-none">=</h2>
         </div>
-        <div>
-            <ul id="noLogin">
-                <li><a class="btn btn-primary" href="login.html">Login</a></li>
-                <li class="pr-0"><a class="btn btn-default" href="signup.html">Signup</a></li>
-            </ul>
-            <h4  class="text-white" id="welcomeText">Welcome, <span id="userName" class="text-warning font-bold"> </span></h4>
-        </div>
+       <div class="d-flex s-d-block flex-1 items-center">
+           <div class="s-d-block">
+               <ul>
+                   <li><a href="/"> About</a></li>
+                   <li><a href="/"> Mens</a></li>
+                   <li><a href="/"> Womens</a></li>
+                   <li><a href="/"> Gallery</a></li>
+                   <li><a href="/"> Contact</a></li>
+               </ul>
+           </div>
+           <div>
+               <ul id="noLogin">
+                   <li><a class="btn btn-primary" href="login.html">Login</a></li>
+                   <li class="pr-0"><a class="btn btn-default" href="signup.html">Signup</a></li>
+               </ul>
+               <h4  class="text-white" id="welcomeText">Welcome, <span id="userName" class="text-warning font-bold"> </span></h4>
+           </div>
+       </div>
     </nav>
     <section class="banner">
        <div class="container">
@@ -44,8 +50,8 @@
 
     <section class="container text-center">
         <div class="grid mt-2">
-            <div class="mt-2">
-                <img src="asset/image/about.jpeg" alt="" class="img_responsive">
+            <div class="mt-2 img_border">
+                <img src="asset/image/about.jpeg" alt="" class="img_responsive about_img">
             </div>
             <div class="mt-2">
                     <h2 class="yellow title">About Us</h2>
@@ -59,49 +65,118 @@
             </div>
         </div>
     </section>
-<section class="free_sec">
-    <div class="container">
-        <h1>Free shipping on all orders above $60 </h1>
-    </div>
-</section>
-<footer>
-    <div class="container">
-        <div class="grid_footer">
-            <div>
-                <h5>About us</h5>
-                <p>We Provide You With Great Suits That Benefit You And Your Lifestyle</p>
+    <section class="review">
+        <div class="container d-flex justify-align-center gap-5 s-d-block">
+            <div class="text-center">
+                <i class="fa fa-camera"></i>
+                <h3>3332</h3>
+                <p>Happy clients</p>
             </div>
-            <div>
-                <h5>Our Services</h5>
-                <ul>
-                    <li>Foreign Suit</li>
-                    <li>Resizing Dress</li>
-                    <li>Ankara Sewing</li>
-                    <li>Traditional wears</li>
-                    <li>Etibor</li>
-                </ul>
+            <div class="text-center mt-2">
+                <i class="fa fa-map-marker-alt"></i>
+                <h3>333</h3>
+                <p>Location Acquired</p>
             </div>
-            <div>
-                <h5>Business Hours</h5>
-                <ul>
-                    <li>Monday - Friday : 9 am to 8 pm</li>
-                    <li>Saturday : 10 am to 4 pm</li>
-                    <li>Sunday : Closed</li>
-                    <li>Support Hours in 24/7 Everyday</li>
-                </ul>
+            <div class="text-center mt-2">
+                <i class="fa fa-user-tie"></i>
+                <h3>333</h3>
+                <p>Designs</p>
             </div>
-            <div>
-                <h5>Service Hours</h5>
-                <ul>
-                    <li>Monday - Friday : 9 am to 8 pm</li>
-                    <li>Saturday : 10 am to 4 pm</li>
-                    <li>Sunday : Closed</li>
-                    <li>Support Hours in 24/7 Everyday</li>
-                </ul>
+            <div class="text-center mt-2">
+                <i class="fa fa-users"></i>
+                <h3>333</h3>
+                <p>Smart Employees</p>
             </div>
         </div>
-    </div>
-</footer>
+    </section>
+    <section class="mansory container">
+        <h2 class="yellow title text-center">Our Gallery</h2>
+        <p class="text-center mb-3">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born <br>and I will give you a complet.</p>
+        <div class="mansory-container">
+            <div class="mansory-content">
+                <img src="asset/image/gallery/ankara-1.jpg" alt="ankara" />
+            </div>
+            <div class="mansory-content">
+                <img src="asset/image/gallery/ankara-2.jpg" alt="ankara" />
+            </div>
+            <div class="mansory-content">
+                <img src="asset/image/gallery/suit-1.jpg" alt="Native suit" />
+            </div>
+            <div class="mansory-content">
+                <img src="asset/image/gallery/suit-3.jpg" alt="Native suit"/>
+            </div>
+            <div class="mansory-content">
+                <img src="asset/image/gallery/suit-2.jpg" alt="Suit" />
+            </div>
+            <div class="mansory-content">
+                <img src="asset/image/gallery/ankara-3.jpg" alt="ankara" />
+            </div>
+            <div>
+                <img src="asset/image/gallery/native-3.jpg" alt="Native" />
+            </div>
+            <div class="mansory-content">
+                <img src="asset/image/gallery/akwa-1.jpg" alt="Native" />
+            </div>
+            <div class="mansory-content">
+                <img src="asset/image/gallery/akwa-2.jfif" alt="Native"  />
+            </div>
+            <div class="mansory-content">
+                <img src="asset/image/gallery/native-1.jpg" alt="Native"  />
+            </div>
+            <div class="mansory-content">
+                <img src="asset/image/gallery/akwa-3.jpg" alt="Native"  />
+            </div>
+            <div>
+                <img src="asset/image/gallery/wedding-1.jpg" alt="Native" />
+            </div>
+            <div>
+                <img src="asset/image/gallery/native-2.jpg" alt="Native" />
+            </div>
+        </div>
+    </section>
+    <section class="free_sec">
+        <div class="container">
+            <h1>Free shipping on all orders above $60 </h1>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="grid_footer">
+                <div>
+                    <h5>About us</h5>
+                    <p>We Provide You With Great Suits That Benefit You And Your Lifestyle</p>
+                </div>
+                <div>
+                    <h5>Our Services</h5>
+                    <ul class="other-links">
+                        <li><a href="#"> <i class="fas fa-chevron-right"></i> Foreign Suit</a></li>
+                        <li><a href="#"> <i class="fas fa-chevron-right"></i> Resizing Dress</a></li>
+                        <li><a href="#"> <i class="fas fa-chevron-right"></i> Ankara Sewing</a></li>
+                        <li><a href="#"> <i class="fas fa-chevron-right"></i> Traditional wears</a></li>
+                        <li><a href="#"> <i class="fas fa-chevron-right"></i> Etibor</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>Business Hours</h5>
+                    <ul>
+                        <li>Monday - Friday : 9 am to 8 pm</li>
+                        <li>Saturday : 10 am to 4 pm</li>
+                        <li>Sunday : Closed</li>
+                        <li>Support Hours in 24/7 Everyday</li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>Service Hours</h5>
+                    <ul>
+                        <li>Monday - Friday : 9 am to 8 pm</li>
+                        <li>Saturday : 10 am to 4 pm</li>
+                        <li>Sunday : Closed</li>
+                        <li>Support Hours in 24/7 Everyday</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 <script src="asset/js/app.js">
