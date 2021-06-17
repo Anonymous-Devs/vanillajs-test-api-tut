@@ -12,7 +12,7 @@ welcomeText.style.display = 'none';
 let email = localStorage.getItem('user');
 
 if(email !== null){
-    fetch(`https://4cf49c2887b0.ngrok.io/user/getOne?email=${email}`).then(res => {
+    fetch(`http://test-api.yowamusic.com.ng/user/getOne?email=${email}`).then(res => {
         return res.json()
     }).then(data => {
         noLogin.style.display = 'none';

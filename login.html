@@ -11,22 +11,28 @@
 
 <body>
 
-<h1 class="text-center"> Test App! </h1>
+        <div class="main-reg">
 
-<!--- Login Form --->
-<div>
-    <h3 class="text-center">Signin SECTION </h3>
-    <p id="errorMessage" class="text-center"></p>
-    <form action="https://98908d1183fa.ngrok.io/user/sign-in"  method="POST" style="margin-top:1rem" id="signin">
-        <input type="email" name="email" placeholder="email" style="margin-top:1rem" required><br/>
-        <input type="password" name="password" placeholder="password" style="margin-top:1rem" required><br />
-        <center>
-            <button type="submit" style="margin-top:1rem">Submit</button>
-        </center>
-        <p class="text-center"> Don't have an account? <a id="signupBtn">Signup</a></p>
-    </form>
-    <div>
+            <!--- Login Form --->
+            <div class="flex-form-div">
+                <h1 class="text-center"> Test App! </h1>
+                <h3 class="text-center">Signin SECTION </h3>
+                <p id="errorMessage" class="text-center"></p>
+                <form action="https://98908d1183fa.ngrok.io/user/sign-in"  method="POST" style="margin-top:1rem" id="signin">
+                    <input type="email" name="email" placeholder="email" style="margin-top:1rem" required><br/>
+                    <input type="password" name="password" placeholder="password" style="margin-top:1rem" required><br />
+                    <center>
+                        <button type="submit" style="margin-top:1rem">Submit</button>
+                    </center>
+                    <div class="text-center"> Don't have an account? <a href="signup.html">Signup</a></div>
+                </form>
+            </div>
+            </div>
 
+
+
+
+        </div>
         <script src="./asset/js/sign-in.js"></script>
 
 </body>
